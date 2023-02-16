@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <section style={{display: 'flex', justifyContent: 'center', marginTop: 120}}>
+    <section style={{display: 'flex', justifyContent: 'center', marginTop: 120, marginBottom: 20}}>
       <div className="App">
         <Formik
           initialValues={{ email: '', password: '' }}
@@ -26,12 +26,12 @@ function App() {
               <h1>Login</h1>
               <p style={{ textAlign: 'left', marginLeft: 50 }}>Email</p>
               <Field type="email" name="email" />
-              <div class='error'>
+              <div className='error'>
                 <ErrorMessage name="email" />
               </div>
               <p style={{ textAlign: 'left', marginLeft: 50 }}>Password</p>
               <Field type="password" name="password" />
-              <div class='error'>
+              <div className='error'>
                 <ErrorMessage name="password" />
               </div>
               <p style={{ textAlign: 'right', marginRight: 45, fontSize: 14 }}>Forgot your password?</p>
@@ -42,8 +42,6 @@ function App() {
 
               <p style={{ fontSize: 14 }}>Don't have an account? <a href="#">Sign up</a></p>
             </Form>
-
-
           )}
         </Formik>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
