@@ -23,7 +23,7 @@ function App() {
         >
           {({ isSubmitting }) => (
             <Form>
-              <h1>Login</h1>
+              <h1 style={{fontSize: 26}}>Login</h1>
               <p style={{ textAlign: 'left', marginLeft: 50 }}>Email</p>
               <Field type="email" name="email" />
               <div className='error'>
